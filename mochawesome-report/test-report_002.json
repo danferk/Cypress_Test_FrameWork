@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-13T19:58:44.388Z",
+    "end": "2021-08-13T19:58:54.760Z",
+    "duration": 10372,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b32e47f6-e5eb-4a7d-bb4e-1f222054216a",
+      "title": "",
+      "fullFile": "cypress/integration/features/UI/Test1.feature",
+      "file": "cypress/integration/features/UI/Test1.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1f10a991-6a10-4423-9d6a-0a10bfcf6bae",
+          "title": "Navigating to Google.com and verifying title and match result keyword",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform Search",
+              "fullTitle": "Navigating to Google.com and verifying title and match result keyword Perform Search",
+              "timedOut": null,
+              "duration": 6789,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "b374024d-b126-4602-a851-a12fcd59c2aa",
+              "parentUUID": "1f10a991-6a10-4423-9d6a-0a10bfcf6bae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b374024d-b126-4602-a851-a12fcd59c2aa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6789,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "test-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "test-report",
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

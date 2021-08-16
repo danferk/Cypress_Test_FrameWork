@@ -1,0 +1,122 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-13T19:58:34.290Z",
+    "end": "2021-08-13T19:58:34.731Z",
+    "duration": 441,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f97e886a-736d-4e2a-aada-c46108f52693",
+      "title": "",
+      "fullFile": "cypress/integration/features/API/Pokemon_test.feature",
+      "file": "cypress/integration/features/API/Pokemon_test.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "32f027cc-e8c0-492c-8451-937de2cb5489",
+          "title": "Pokemon GET /pokemon/{pokemon_name or id}",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fetch data for a pokemon using API and verify it",
+              "fullTitle": "Pokemon GET /pokemon/{pokemon_name or id} Fetch data for a pokemon using API and verify it",
+              "timedOut": null,
+              "duration": 321,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7f0246a7-a180-4285-9aca-03c0d2158252",
+              "parentUUID": "32f027cc-e8c0-492c-8451-937de2cb5489",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Fetch data for an invalid pokemon using API and verify it",
+              "fullTitle": "Pokemon GET /pokemon/{pokemon_name or id} Fetch data for an invalid pokemon using API and verify it",
+              "timedOut": null,
+              "duration": 73,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "cf05e6b0-e640-411c-b6ca-8262f123a7ab",
+              "parentUUID": "32f027cc-e8c0-492c-8451-937de2cb5489",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7f0246a7-a180-4285-9aca-03c0d2158252",
+            "cf05e6b0-e640-411c-b6ca-8262f123a7ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 394,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "test-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "test-report",
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}
